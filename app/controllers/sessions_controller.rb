@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
 
   def new
     @users = User.all
+    @rooms = Room.all
   end
 
   def create

@@ -5,3 +5,13 @@
     <li><%= link_to user.name, session_url(user_id: user.id), method: :post %></li>
   <% end %>
 </ul>
+
+rooms
+
+<ul>
+  <% @rooms.each do |room| %>
+    <li><%= link_to room.name, room_url(room) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'ルーム作成', new_room_url %>
